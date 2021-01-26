@@ -1,2 +1,2 @@
-# members
-Towards AI Memberships
+# Members
+Join us → https://members.towardsai.net/
