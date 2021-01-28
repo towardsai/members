@@ -563,7 +563,26 @@
                 closeCookieDialog();
             }, 15000);
 
-            function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-9D3HKKFV1Q");
+            // Add cross-domain measurement, anonymize IPs
+            'use strict';
+            var ga = gtag;
+            ga('config', 'G-9D3HKKFV1Q', 'auto', {
+              'allowLinker': true,
+              'anonymize_ip': true,
+              'linker': {
+                'domains': [
+                  'medium.com/towards-artificial-intelligence',
+                  'datasets.towardsai.net',
+                  'rss.towardsai.net',
+                  'feed.towardsai.net',
+                  'contribute.towardsai.net',
+                  'members.towardsai.net',
+                  'pub.towardsai.net',
+                  'news.towardsai.net'
+                ]
+              }
+            })
+            ga('send', 'pageview');
         </script>
     </body>
 </html>
