@@ -10,12 +10,12 @@
     <head>
         <script src="https://www.googletagmanager.com/gtag/js?id=G-9D3HKKFV1Q" type="text/javascript"></script>
         <script type="text/javascript">
-            function gtag() {
+            function ga() {
                 dataLayer.push(arguments)
             }
             window.dataLayer = window.dataLayer || [],
-            gtag("js", new Date),
-            gtag("config", "G-9D3HKKFV1Q");
+            ga("js", new Date),
+            ga("config", "G-9D3HKKFV1Q");
         </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -565,7 +565,7 @@
 
             // Add cross-domain measurement, anonymize IPs
             'use strict';
-            var ga = gtag;
+            //var ga = gtag;
             ga('config', 'G-9D3HKKFV1Q', 'auto', {
               'allowLinker': true,
               'anonymize_ip': true,
